@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF;"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.atm.controllers.MenuController">
+   <children>
+      <Button fx:id="btn_withdraw" alignment="BASELINE_LEFT" layoutX="57.0" layoutY="509.0" mnemonicParsing="false"
+              onAction="#withdraw" prefHeight="62.0" prefWidth="523.0" style="-fx-background-color: #113375;
+              -fx-background-radius: 7px;" text="    Withdraw ↵" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_deposit" alignment="BASELINE_LEFT" layoutX="57.0" layoutY="578.0" mnemonicParsing="false"
+              onAction="#deposit" prefHeight="62.0" prefWidth="523.0" style="-fx-background-color: #003375;
+              -fx-background-radius: 7px;" text="    Deposit ↵" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_balance" alignment="BASELINE_LEFT" layoutX="588.0" layoutY="510.0" mnemonicParsing="false"
+              onAction="#checkBalance" prefHeight="62.0" prefWidth="523.0" style="-fx-background-color: #003375;
+              -fx-background-radius: 7px;" text="    Balance ↵" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_history" alignment="BASELINE_LEFT" layoutX="57.0" layoutY="650.0" mnemonicParsing="false"
+              onAction="#checkTransactionHistory" prefHeight="62.0" prefWidth="523.0"
+              style="-fx-background-color: #003375; -fx-background-radius: 7px;" text="    Transaction History ↵"
+              textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutY="735.0" mnemonicParsing="false" onAction="#logout" prefHeight="51.0" prefWidth="131.0"
+              style="-fx-background-color: #FFFFFF;" text="← Log Out" textFill="#d75151">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn_transfer" alignment="BASELINE_LEFT" layoutX="588.0" layoutY="579.0" mnemonicParsing="false"
+              onAction="#transfer" prefHeight="62.0" prefWidth="523.0" style="-fx-background-color: #003375;
+              -fx-background-radius: 7px;" text="    Transfer ↵" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="30.0" layoutY="469.0" text="Banking Features:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="675.0" fitWidth="1200.0" layoutY="-258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2311974.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="369.0" layoutY="366.0" opacity="0.91" prefHeight="110.0" prefWidth="462.0"
+                  style="-fx-background-radius: 7px; -fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="70.0" layoutY="30.0" prefHeight="32.0" prefWidth="323.0" text="DiamondHands Banking ">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="62.0" prefHeight="20.0" prefWidth="397.0"
+                   text="Welcome Valued Customer! Here, Your Safety is our #1 Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

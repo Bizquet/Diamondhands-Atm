@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="depositPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #3c3c3c;"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.atm.controllers.DepositController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/architecture-building-town-city.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="370.0" layoutY="42.0" opacity="0.95" prefHeight="700.0" prefWidth="492.0"
+                  style="-fx-background-color: #FFFFFF; -fx-background-radius: 7px;">
+         <children>
+            <Label layoutX="54.0" layoutY="245.0" text="Deposit">
+               <font>
+                  <Font name="Arial Bold" size="46.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountField" layoutX="56.0" layoutY="324.0" prefHeight="53.0" prefWidth="288.0"
+                       style="-fx-background-color: #FFFFFF; -fx-border-color: #3c3c3c; -fx-border-radius: 7px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button layoutX="56.0" layoutY="389.0" mnemonicParsing="false" onAction="#depositAmount" prefHeight="44.0"
+                    prefWidth="288.0" style="-fx-background-color: #003375; -fx-background-radius: 7px;"
+                    text="Continue" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="23.0" layoutY="635.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="44.0"
+                    prefWidth="88.0" style="-fx-background-color: #003375; -fx-background-radius: 7px;" text=" ← Back"
+                    textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="87.0" layoutY="27.0" prefHeight="34.0" prefWidth="322.0" text="DiamondHands Banking "
+                   textFill="#252627">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="61.0" prefHeight="20.0" prefWidth="397.0"
+                   text="Welcome Valued Customer! Here, Your Safety is our #1 Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="304.0" prefHeight="20.0" prefWidth="138.0" text="Insert Exact Amount:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

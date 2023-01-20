@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1196.0" style="-fx-background-color: #3c3c3c;"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.atm.controllers.RegistrationController">
+
+   <children>
+      <ImageView fitHeight="827.0" fitWidth="1210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/picture4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="325.0" layoutY="50.0" opacity="0.91" prefHeight="700.0" prefWidth="550.0"
+                  style="-fx-background-color: #FFFFFF; -fx-background-radius: 7px;">
+         <children>
+            <Label layoutX="114.0" layoutY="138.0" text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="288.0" layoutY="138.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="212.0" text="Birth Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="286.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="441.0" text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="212.0" text="Occupation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="366.0" text="Type of Card">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="366.0" text="Purpose">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fNameField" layoutX="114.0" layoutY="165.0" style="-fx-border-color: #3c3c3c;
+            -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="lNameField" layoutX="288.0" layoutY="165.0" style="-fx-border-color: #3c3c3c;
+            -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <DatePicker fx:id="birthDatePicker" layoutX="113.0" layoutY="242.0" prefHeight="27.0" prefWidth="150.0"
+                        style="-fx-border-color: #3c3c3c; -fx-border-radius: 7px; -fx-background-color: #FFFFFF;" />
+            <TextField fx:id="addressField" layoutX="113.0" layoutY="315.0" prefHeight="20.0" prefWidth="325.0"
+                       style="-fx-border-color: #3c3c3c; -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="emailField" layoutX="113.0" layoutY="468.0" prefHeight="25.0" prefWidth="325.0"
+                       style="-fx-border-color: #3c3c3c; -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="occupationField" layoutX="288.0" layoutY="242.0" style="-fx-border-color: #3c3c3c;
+            -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <ComboBox fx:id="cardTypeBox" layoutX="115.0" layoutY="397.0" prefHeight="27.0" prefWidth="150.0"
+                      style="-fx-border-color: #3c3c3c; -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Checking" />
+                     <String fx:value="Savings" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <TextField fx:id="purposeField" layoutX="286.0" layoutY="397.0" style="-fx-border-color: #3c3c3c;
+            -fx-border-radius: 7px; -fx-background-color: #FFFFFF;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+      
+            <Button alignment="CENTER" layoutX="115.0" layoutY="514.0" mnemonicParsing="false" onAction="#showPinWindow"
+                    prefHeight="43.0" prefWidth="325.0" style="-fx-background-color: #003375;
+                    -fx-background-radius: 7px;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="197.0" layoutY="572.0" text="Already Have an Account?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="115.0" layoutY="599.0" mnemonicParsing="false" onAction="#backToLogin"
+                    prefHeight="43.0" prefWidth="325.0" style="-fx-background-color: #003375;
+                    -fx-background-radius: 7px;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="40.0" layoutY="57.0" prefHeight="34.0" prefWidth="490.0"
+                   text="DiamondHands Banking Registration" textFill="#252627">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="91.0" prefHeight="20.0" prefWidth="397.0"
+                   text="Welcome Valued Customer! Here, Your Safety is our #1 Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+
+
+
+
+
+   </children>
+</AnchorPane>
